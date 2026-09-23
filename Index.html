@@ -42,4 +42,106 @@
 
         /* Contact icons */
         .icon {
-           
+            width: 22px;
+            height: 22px;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        .icon:hover {
+            opacity: 1;
+        }
+
+        /* Resume link */
+        nav .resume-link {
+            text-decoration: none;
+            color: #111;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        /* Three-column layout */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 40px;
+        }
+
+        .card {
+            padding: 40px;
+            border: 1px solid #eee;
+            border-radius: 16px;
+            background: #fafafa;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .card h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="left-nav">
+            <a href="#">Tejas Javagal</a>
+
+            <!-- Contact icons -->
+            <a href="mailto:your-email@domain.com">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            </a>
+
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+        </div>
+
+        <a class="resume-link" href="#">Resume</a>
+    </nav>
+
+    <!-- Three Vertical Sections -->
+    <div class="container">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Write your About Me content here.</p>
+        </div>
+
+        <div class="card">
+            <h2>How I Use AI</h2>
+            <p>Describe your AI experience here.</p>
+        </div>
+
+        <div class="card">
+            <h2>How AI Will Impact Organizations</h2>
+            <p>Write your perspective here.</p>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Tejas Javagal
+    </footer>
+
+</body>
+</html>
